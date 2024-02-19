@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel figure {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .carousel figure img {
+      width: 100%;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: translateX(0);
+      }
+      20% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-100%);
+      }
+      45% {
+        transform: translateX(-100%);
+      }
+      50% {
+        transform: translateX(-200%);
+      }
+      70% {
+        transform: translateX(-200%);
+      }
+      75% {
+        transform: translateX(-300%);
+      }
+      95% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="carousel">
+  <figure>
+    <img src="./readme-images/57-bg.png" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </figure>
+</div>
+
+<script>
+  const carousel = document.querySelector('.carousel figure');
+
+  setInterval(() => {
+    carousel.style.animation = 'rotate 12s linear infinite';
+  }, 1000);
+</script>
+
+</body>
+</html>

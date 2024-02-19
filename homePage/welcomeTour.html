@@ -1,0 +1,28 @@
+<!-- USING INTO.JS -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js	"></script>
+<script>
+    introJs().setOptions({
+        steps:[{
+            title:'Welcome',
+            intro:'Hello World'
+        },
+        {
+            element:document.querySelector('.box-info'),
+            title:'World Python',
+            intro:'Type a message here'
+        },
+        {
+            element:document.querySelector('.table-data'),
+            title:'World Python',
+            intro:'Type a message here'
+        },
+    ],
+    
+    //for the intro to be visible only once
+    dontShowAgain: true,
+    }).start();
+</script>
